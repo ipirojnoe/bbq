@@ -8,6 +8,8 @@ gem 'puma', '~> 4.1'
 gem 'webpacker', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
+gem 'rails-i18n'
+gem 'devise-i18n'
 
 group :production do
   gem 'pg'
