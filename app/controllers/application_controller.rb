@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  add_flash_types :success, :danger, :warning
+
   helper_method :current_user_can_edit?
 
   def configure_permitted_parameters

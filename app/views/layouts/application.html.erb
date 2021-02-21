@@ -1,64 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bbq</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>BBQ</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-
-<div class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-      <div class="container">
-        <%= link_to 'BBQ!', root_path, class: 'navbar-brand' %>
-        <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <% if user_signed_in? %>
-              <li class="nav-item"><%= link_to 'Профиль', current_user, class: 'nav-link' %></li>
-              <li class="nav-item"><%= link_to 'Выйти', destroy_user_session_path, method: :delete,
-                              class: 'nav-link' %></li>
-            <% else %>
-              <li class="nav-item"><%= link_to 'Войти', new_user_session_path, class: 'nav-link' %></li>
-              <li class="nav-item"><%= link_to 'Зарегистрироваться', new_user_registration_path,
-                              class: 'nav-link' %></li>
-            <% end %>
-          </ul>
-        </div>
+<body>
+  <div class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <%= link_to 'BBQ!', root_path, class: 'navbar-brand' %>
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <% if user_signed_in? %>
+            <li class="nav-item"><%= link_to 'Профиль', current_user, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'Выйти', destroy_user_session_path, method: :delete,
+                            class: 'nav-link' %></li>
+          <% else %>
+            <li class="nav-item"><%= link_to 'Войти', new_user_session_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'Зарегистрироваться', new_user_registration_path,
+                            class: 'nav-link' %></li>
+          <% end %>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <% if flash.any? %>
-            <div class="content-wrapper buffer-both">
-              <% flash.each do |name, message| %>
-                <%= content_tag :div, message, class: "flash-#{name}" %>
-              <% end %>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <% if flash.any? %>
+        <div class="content-wrapper buffer-both">
+          <% flash.each do |name, message| %>
+            <%= content_tag :div, message, class: "alert alert-#{flash_class(name)}" %>
           <% end %>
-          <%= yield %>
-        </div>
-        <div class="col-lg-3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-      </div><!--/row-->
+          </div>
+        <% end %>
+        <%= yield %>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
 
-      <footer>
-        <p>&copy; 2020-2021 Илья</p>
-      </footer>
-
-    </div> <!-- /container -->
-  </body>
+    <footer>
+      <p>&copy; Илья, 2020</p>    
+    </footer>
+  </div>
+</body>
 </html>
