@@ -1,28 +1,26 @@
+<%= render "devise/shared/error_messages", resource: resource %>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-6">
-    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
       <div class="card text-center">
         <header class="card-header">
-          <h4 class="card-title mt-2">Забыли пароль?</h4>
+          <h4 class="card-title mt-2"><%= t('devise.passwords.new.title') %></h4>
         </header>
         <article class="card-body">
-        <form>
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
           <div class="form-group">
             <%= f.label :email %>
             <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
           </div>
           <div class="form-group">
-              <%= f.submit "Сбросить", class: "btn btn-primary btn-block" %>
+              <%= f.submit t('form.reset'), class: "btn btn-primary btn-block" %>
           </div>                                         
-        </form>
+        <% end %>
         </article>
         <div class="border-top card-body">
           <%= render "devise/shared/links" %>
         </div>
       </div>
-    <% end %>
     </div>
   </div>
 </div>
