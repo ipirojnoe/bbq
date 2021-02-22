@@ -16,7 +16,7 @@ ru:
         title: "Хотите удалить аккаунт?"
         button: "Удалить аккаунт"
     minimun_password_length:
-      one: "Минимум 1 символ"
+      one: "Минимум %{count} символ"
       few: "Минимум %{count} символа"
       many: "Минимум %{count} символов"
   general:
@@ -82,7 +82,7 @@ ru:
       title: "Новое событие"
   partials:
    error:
-    one: "В вашей форме 1 ошибка"
+    one: "В вашей форме %{count} ошибка"
     few: "В вашей форме %{count} ошибки"
     many: "В вашей форме %{count} ошибок"
   controller:
