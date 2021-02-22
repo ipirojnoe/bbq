@@ -2,17 +2,17 @@
   <%= render partial: 'partials/form_errors', locals: {model: @user} %>
 
   <div class="form-group">
-    <%= f.label :username, 'Никнейм' %>
+    <%= f.label :username, t('users.form.nickname') %>
     <%= f.text_field :username, class: 'form-control' %>
   </div>
 
   <div class="form-group">
-    <%= f.label :email %>
+    <%= f.label :email, t('users.form.email') %>
     <%= f.text_field :email, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= f.submit 'Сохранить', class: 'btn btn-primary' %>
-    или <%= link_to 'вернуться', :back %>
+    <%= f.submit t('general.save'), class: 'btn btn-primary' %>
+    <%= t('general.or') %> <%= link_to t('general.return'), :back %>
   </div>
 <% end %>

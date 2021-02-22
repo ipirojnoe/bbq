@@ -1,0 +1,96 @@
+ru:
+  form:
+    password: "Пароль"
+    change_password: "Изменить пароль"
+    current_password: "Текущий пароль"
+    new_password: "Новый пароль"
+    confirm_password: "Подтверждение пароля"
+    reset: "Сбросить"
+    register: 
+      title: "Регистрация"
+      button: "Зарегистрироваться"
+    delete:
+      button_title: "Удалить"
+      confirm: "Вы уверены?"
+      account: 
+        title: "Хотите удалить аккаунт?"
+        button: "Удалить аккаунт"
+    minimun_password_length:
+      one: "Минимум 1 символ"
+      few: "Минимум %{count} символа"
+      many: "Минимум %{count} символов"
+  general:
+    or: "или"
+    save: "Сохранить"
+    return: "Вернуться"
+    edit: "Изменить"
+  activerecord:
+    models:
+      user: "Пользователь"
+      event: "Событие"
+    attributes:
+      user:
+        email: "Email"
+        name: "Имя"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+      event:
+        title: "Название"
+        address: "Место проведения"
+        datetime: "Дата и время"
+        description: "Описание"
+  controllers:
+    events:
+      created: "Вы создали новое мероприятие"
+      updated: "Вы обновили мероприятие"
+      destroyed: "Вы удалили мероприятие"
+    users:
+      updated: "Вы обновили свой профиль"
+  app:
+    title: "BBQ!!"
+    name: "Барбекю"
+    author: "Илья"
+    years: "2020-2021"
+  layout:
+    sign_in: "Войти"
+    sign_up: "Зарегистрироваться"
+    sign_out: "Выйти"
+    profile: "Профиль"
+  users:
+    form:
+      nickname: "Никнейм"
+      email: "Email"
+    edit:
+      title: "Редактирование профиля"
+    show:
+      edit_profile: "Редактировать профиль"
+      events_made: "Организовал"
+      no_events: "Пользователь пока не организовал ни одного
+          событи"
+  events:
+    events: "События"
+    form:
+      title: "Название"
+      address: "Адрес"
+      time: "Время"
+      description: "Описание"
+    edit:
+      title: "Редактирование события"
+    index:
+      create_new: "Создать событие"
+    new:
+      title: "Новое событие"
+  partials:
+   error:
+    one: "В вашей форме 1 ошибка"
+    few: "В вашей форме %{count} ошибки"
+    many: "В вашей форме %{count} ошибок"
+  controller:
+    events:
+      created: "Событие создано"
+      updated: "Событие обновлено"
+      destroyed: "Событие удалено"
+  devise:
+    passwords:
+      new:
+        title: "Забыли пароль?"

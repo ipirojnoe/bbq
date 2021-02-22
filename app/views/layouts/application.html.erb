@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BBQ</title>
+  <title><%= t('app.title') %></title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -12,7 +12,7 @@
 <body>
   <div class="navbar sticky-top navbar-expand-md navbar-light bg-light">
     <div class="container">
-      <%= link_to 'BBQ!', root_path, class: 'navbar-brand' %>
+      <%= link_to t('app.name'), root_path, class: 'navbar-brand' %>
       <button class="navbar-toggler" type="button"
               data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,12 +21,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <% if user_signed_in? %>
-            <li class="nav-item"><%= link_to 'Профиль', current_user, class: 'nav-link' %></li>
-            <li class="nav-item"><%= link_to 'Выйти', destroy_user_session_path, method: :delete,
+            <li class="nav-item"><%= link_to t('layout.profile'), current_user, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to t('layout.sign_out'), destroy_user_session_path, method: :delete,
                             class: 'nav-link' %></li>
           <% else %>
-            <li class="nav-item"><%= link_to 'Войти', new_user_session_path, class: 'nav-link' %></li>
-            <li class="nav-item"><%= link_to 'Зарегистрироваться', new_user_registration_path,
+            <li class="nav-item"><%= link_to t('layout.sign_in'), new_user_session_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to t('layout.sign_up'), new_user_registration_path,
                             class: 'nav-link' %></li>
           <% end %>
         </ul>
@@ -57,7 +57,7 @@
     </div>
 
     <footer>
-      <p>&copy; Илья, 2020</p>    
+      <p>&copy; <%= t('app.author') %>, <%= t('app.years') %></p>    
     </footer>
   </div>
 </body>
