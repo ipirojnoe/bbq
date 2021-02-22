@@ -1,11 +1,15 @@
-<h1><%= t('users.edit.title') %></h1>
-
-<div class="row">
-  <div class="col-md-6 buffer-top">
-    <%= render 'form' %>
-
-    <p class="buffer-top">
-      <%= link_to t('users.edit.change_password'), edit_user_registration_path %>
-    </p>
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card text-center">
+      <header class="card-header">
+        <h4 class="card-title mt-2"><%= t('users.edit.title') %></h4>
+      </header>
+      <article class="card-body"> 
+      <%= render 'form' %>
+      </article>
+      <div class="border-top card-body">
+        <%= link_to t('form.change_password'), edit_user_registration_path, class: "btn btn-sm btn-dark" %>
+      </div>
+    </div>
   </div>
 </div>
