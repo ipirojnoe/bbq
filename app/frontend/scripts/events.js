@@ -1,5 +1,5 @@
 $(function () {
-  $('#datetimepicker').datepicker({
+  $('#event_datetime').datepicker({
     minDate: new Date()
   })
 });
