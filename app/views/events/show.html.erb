@@ -39,6 +39,7 @@
         <h4><%= t('events.show.inviter') %>:</h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
+      <% if @event.subscriptions.except(@new_subscription).present? %>
       <div class="event-subscriptions">
         <h4><%= t('events.show.invitee') %>:</h4>
         <div>
@@ -48,6 +49,7 @@
           </p>
         </div>
       </div>
+      <% end %>
       <div class="event-subscription-form">
         <h4><%= t('events.show.to_be_invited') %>:</h4>
         <div>
