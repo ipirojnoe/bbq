@@ -40,6 +40,10 @@ ru:
         datetime: "Дата и время"
         description: "Описание"
   controllers:
+    comments:
+      created: "Коммендарий добавлен"
+      destroyed: "Комментарий удалён"
+      error: "Ошибка добавления комментария"
     events:
       created: "Вы создали новое мероприятие"
       updated: "Вы обновили мероприятие"
@@ -80,6 +84,13 @@ ru:
       create_new: "Создать событие"
     new:
       title: "Новое событие"
+  comments: 
+    form:
+      body: "Комментарий"
+      username: "Ваш имя"
+      button: "Отправить"
+    comment:
+      delete: "Удалить"
   partials:
    error:
     one: "В вашей форме %{count} ошибка"
