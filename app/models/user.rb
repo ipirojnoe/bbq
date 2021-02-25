@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :events
   has_many :comments
+  has_many :subscriptions
 
   validates :username, presence: true, length: {maximum: 35}
 
