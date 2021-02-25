@@ -50,6 +50,7 @@
         </div>
       </div>
       <% end %>
+      <% unless @event.user == current_user || is_subscribed?(@event) %>
       <div class="event-subscription-form">
         <h4><%= t('events.show.to_be_invited') %>:</h4>
         <div>
@@ -58,6 +59,7 @@
           } %>
         </div>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
