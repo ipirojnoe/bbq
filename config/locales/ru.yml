@@ -31,6 +31,8 @@ ru:
           attributes:
             user_email:
               email_exist: " уже используется"
+            user:
+              exist: "создатель. Невозможно подписаться"
     models:
       user: "Пользователь"
       event: "Событие"
