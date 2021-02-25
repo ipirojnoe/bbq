@@ -25,6 +25,12 @@ ru:
     return: "Вернуться"
     edit: "Изменить"
   activerecord:
+    errors:
+      models:
+        subscription:
+          attributes:
+            user_email:
+              email_exist: " уже используется"
     models:
       user: "Пользователь"
       event: "Событие"
@@ -50,6 +56,10 @@ ru:
       destroyed: "Вы удалили мероприятие"
     users:
       updated: "Вы обновили свой профиль"
+    subscriptions:
+      created: "Подписка оформлена"
+      destroyed: "Вы отписались"
+      error: "Произошла ошибка!"
   app:
     title: "BBQ!!"
     name: "Барбекю"
@@ -84,6 +94,10 @@ ru:
       create_new: "Создать событие"
     new:
       title: "Новое событие"
+    show:
+      inviter: "Зовёт"
+      invitee: "Пойдут"
+      to_be_invited: "Я пойду"
   comments: 
     form:
       body: "Комментарий"
@@ -91,6 +105,10 @@ ru:
       button: "Отправить"
     comment:
       delete: "Удалить"
+  subscriptions:
+    username: "Ваше имя"
+    useremail: "Ваш email"
+    button: "Подписаться"
   partials:
    error:
     one: "В вашей форме %{count} ошибка"
