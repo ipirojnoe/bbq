@@ -3,7 +3,8 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 import 'bootstrap/dist/js/bootstrap'
-import "air-datepicker/dist/js/datepicker.min"
+import 'air-datepicker/dist/js/datepicker.min'
+import '@fortawesome/fontawesome-free/css/all'
 
 import '../scripts/events'
 

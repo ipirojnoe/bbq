@@ -10,4 +10,8 @@ module ApplicationHelper
     else name
     end
   end
+
+  def fa_icon(icon_class)
+    content_tag 'i', '', class: "#{icon_class}"
+  end
 end
