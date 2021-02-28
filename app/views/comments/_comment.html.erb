@@ -10,7 +10,7 @@
                   <%= render partial: 'users/user', object: comment.user %>
                 <% else %>
                   <span class="user-avatar">
-                    <%= image_tag(user_avatar, class: 'img-icon') %>
+                    <%= image_tag(user_avatar, class: 'img-icon-small') %>
                   </span>
                   <span class="user-name"><%= comment.user_name %></span>
                 <% end %>
