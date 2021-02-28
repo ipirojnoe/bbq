@@ -10,6 +10,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'rails-i18n'
 gem 'devise-i18n'
+gem 'carrierwave', '~> 2.0'
+gem 'rmagick'
 
 group :production do
   gem 'pg'
