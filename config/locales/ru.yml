@@ -42,6 +42,7 @@ ru:
         name: "Имя"
         password: "Пароль"
         password_confirmation: "Подтверждение пароля"
+        avatar: "Аватар"
       event:
         title: "Название"
         address: "Место проведения"
@@ -76,6 +77,8 @@ ru:
     form:
       nickname: "Никнейм"
       email: "Email"
+      choose_avatar: "Выбирете аватар"
+      avatar_alt: "Аватар пользователя"
     edit:
       title: "Редактирование профиля"
     show:

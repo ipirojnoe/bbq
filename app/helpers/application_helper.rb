@@ -1,6 +1,12 @@
 module ApplicationHelper
   def user_avatar(user = nil)
-    'media/images/user.png'
+    unless user.nil?
+      return user.avatar.url if user.avatar?
+
+      asset_pack_path('media/images/default.png')
+    else      
+      asset_pack_path('media/images/anon.jpg')
+    end
   end
 
   def flash_class(name)
