@@ -7,6 +7,7 @@ import 'air-datepicker/dist/js/datepicker.min'
 import '@fortawesome/fontawesome-free/css/all'
 
 import '../scripts/events'
+import '../scripts/users'
 
 // stylesheets
 import '../styles/application'
