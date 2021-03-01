@@ -15,7 +15,7 @@ class Subscription < ApplicationRecord
   
   def user_name
     if user.present?
-      user.name
+      user.username
     else
       super
     end
