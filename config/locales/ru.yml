@@ -147,3 +147,5 @@ ru:
     passwords:
       new:
         title: "Забыли пароль?"
+      change:
+        title: "Изменение пароля"
