@@ -13,6 +13,7 @@ gem 'devise-i18n'
 gem 'carrierwave', '~> 2.0'
 gem 'rmagick'
 gem 'fog-aws'
+gem 'mailjet'
 
 group :production do
   gem 'pg'
