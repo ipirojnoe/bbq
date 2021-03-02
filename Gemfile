@@ -26,6 +26,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "letter_opener_web"
   gem 'pry'
   gem 'listen', '~> 3.2'
 end
