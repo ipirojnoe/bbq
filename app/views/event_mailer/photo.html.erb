@@ -1,0 +1,11 @@
+<h1><%= t '.title' %></h1>
+<p><%= image_tag @photo.photo.thumb.url %></p>
+<p><%= t '.author' %>: <strong><%= @photo.user.username %></strong></p>
+
+<hr/>
+
+<p><%= t '.event' %>: <strong><%= @event.title %></strong></p>
+
+<p><%= t '.datetime' %>: <strong><%= l @event.datetime, format: :long %></strong></p>
+
+<p><%= t '.owner' %>: <strong><%= @event.user.username %></strong></p>
