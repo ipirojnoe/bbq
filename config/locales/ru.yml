@@ -113,7 +113,6 @@ ru:
     show:
       inviter: "Зовёт"
       invitee: "Пойдут"
-      to_be_invited: "Я пойду"
       pincode:
         title: "Доступ только по пин-коду"
   comments: 
@@ -126,7 +125,7 @@ ru:
   subscriptions:
     username: "Ваше имя"
     useremail: "Ваш email"
-    button: "Подписаться"
+    button: "Я пойду"
   event_mailer:
     comment:
       title: 'Новый комментарий'

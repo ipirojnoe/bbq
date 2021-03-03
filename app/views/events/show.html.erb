@@ -59,8 +59,7 @@
       </div>
       <% end %>
       <% unless @event.user == current_user || is_subscribed?(@event) %>
-      <div class="event-subscription-form">
-        <h4><%= t('events.show.to_be_invited') %>:</h4>
+      <div class="event-subscription-form mt-4">
         <div>
           <%= render partial: 'subscriptions/form', locals: {
             subscription: @new_subscription || @event.subscriptions.build
