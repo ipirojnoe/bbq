@@ -6,6 +6,8 @@ ru:
     new_password: "Новый пароль"
     confirm_password: "Подтверждение пароля"
     reset: "Сбросить"
+    pincode: "Пинкод"
+    send_button: "Отпраавить"
     register: 
       title: "Регистрация"
       button: "Зарегистрироваться"
@@ -48,6 +50,7 @@ ru:
         address: "Место проведения"
         datetime: "Дата и время"
         description: "Описание"
+        pincode: "Пинкод"
   controllers:
     comments:
       created: "Коммендарий добавлен"
@@ -57,6 +60,7 @@ ru:
       created: "Вы создали новое мероприятие"
       updated: "Вы обновили мероприятие"
       destroyed: "Вы удалили мероприятие"
+      wrong_pincode: "Неправильный пинкод"
     users:
       updated: "Вы обновили свой профиль"
     subscriptions:
@@ -97,6 +101,7 @@ ru:
       address: "Адрес"
       time: "Время"
       description: "Описание"
+      pincode: "Пинкод"
     edit:
       title: "Редактирование события"
     index:
@@ -107,6 +112,8 @@ ru:
       inviter: "Зовёт"
       invitee: "Пойдут"
       to_be_invited: "Я пойду"
+      pincode:
+        title: "Доступ только по пин-коду"
   comments: 
     form:
       body: "Комментарий"
