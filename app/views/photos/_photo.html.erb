@@ -1,7 +1,5 @@
 <%# Паршал для вывода отдельной фотографии %>
-<div class="event-photo buffer-both">
-  <%= link_to image_tag(photo.photo.thumb.url), photo.photo.url %>
+  <% title = "#{t('controllers.photos.added')} #{render partial: 'users/user', object: photo.user} #{delete_photo?(@event, photo)}" %>
+  <%= link_to image_tag(photo.photo.thumb.url, class: "m-1"), photo.photo.url,
+              data: { title: title, toggle: "lightbox", gallery: "event-photos" } %>
 
-  <%# Показываем не только фотку, но и юзаре, который её добавил %>
-  Добавил <%= render partial: 'users/user', object: photo.user %>
-</div>

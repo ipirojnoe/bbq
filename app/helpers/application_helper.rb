@@ -48,4 +48,11 @@ module ApplicationHelper
   def fa_icon(icon_class)
     content_tag 'i', '', class: "#{icon_class}"
   end
+
+  
+  def delete_photo?(event, photo)
+    if event.user == current_user || photo.user == current_user
+      link_to fa_icon("fas fa-trash"), event_photo_path(event, photo), method: :delete
+    end
+  end
 end
