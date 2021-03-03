@@ -4,7 +4,7 @@
       <%= content_tag 'div', '', class: 'event-background',
         style: "background-image: url(#{event_thumb(@event)})" %>
 
-      <div class="event-info-inner row padding-both">
+      <div class="event-info-inner row padding-both mb-3">
         <div class="col-md-6">
           <div class="event-description">
             <h1><%= @event.title %></h1>
@@ -26,6 +26,7 @@
     
     <div class="row text-dark">
     <div class="col-md-8">
+      <div id="map", class="mb-3" data-address="<%= @event.address %>"></div>
       <div class="event-photos">
         <div class="event-photos-gallery">
           <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
