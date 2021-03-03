@@ -31,7 +31,7 @@
           <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
         </div>
         <% if user_signed_in? %>
-        <div class="event-photo-form">
+        <div class="event-photo-form bg-light p-4 rounded">
           <%= render partial: 'photos/form', locals: {photo: @new_photo || @event.photos.build} %>
         </div>
         <% end %>

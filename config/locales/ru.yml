@@ -85,8 +85,9 @@ ru:
     form:
       nickname: "Никнейм"
       email: "Email"
-      choose_avatar: "Выбирете аватар"
+      choose_avatar: "Выберите аватар"
       avatar_alt: "Аватар пользователя"
+      choose_photo: "Виберите картинку"
     edit:
       title: "Редактирование профиля"
     show:

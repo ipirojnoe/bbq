@@ -3,10 +3,11 @@
 <%= form_for [@event, photo], html: { multipart: true } do |f| %>
   <%= render partial: 'partials/form_errors', locals: {model: photo} %>
 
-  <div class="form-group">
-    <%= f.label :photo %>
-    <%= f.file_field :photo %>
-  </div>
+    <div class="custom-file mb-4">
+      <%= f.file_field :avatar, class: 'custom-file-input' %>
+      <%= f.label :avatar, t('users.form.choose_photo'), class: "custom-file-label" %>
+    </div>
+  
 
   <div class="actions">
     <%= f.submit 'Загрузить', class: 'btn btn-primary' %>
