@@ -4,7 +4,7 @@
 
 <hr/>
 
-<p><%= t '.event' %>: <strong><%= @event.title %></strong></p>
+<p><%= t '.event' %>: <strong><%= link_to @event.title, event_url(@event) %></strong></p>
 
 <p><%= t '.datetime' %>: <strong><%= l @event.datetime, format: :long %></strong></p>
 
