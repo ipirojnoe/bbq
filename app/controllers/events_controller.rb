@@ -59,7 +59,7 @@ class EventsController < ApplicationController
 
   def password_guard!
     return true if @event.pincode.blank?
-    return true if signed_in? && current_user = @event.user
+    return true if signed_in? && current_user == @event.user
 
     if params[:pincode].present? && @event.pincode_valid?(params[:pincode])
       cookies.permanent["events_#{@event.id}_pincode"] = params[:pincode]

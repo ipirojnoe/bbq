@@ -7,7 +7,7 @@ ru:
     confirm_password: "Подтверждение пароля"
     reset: "Сбросить"
     pincode: "Пинкод"
-    send_button: "Отпраавить"
+    send_button: "Отправить"
     register: 
       title: "Регистрация"
       button: "Зарегистрироваться"
@@ -87,7 +87,7 @@ ru:
       email: "Email"
       choose_avatar: "Выберите аватар"
       avatar_alt: "Аватар пользователя"
-      choose_photo: "Виберите картинку"
+      choose_photo: "Выберите картинку"
     edit:
       title: "Редактирование профиля"
     show:
