@@ -1,4 +1,7 @@
 ru:
+  errors:
+    messages:
+      extension_whitelist_error: "Вы загрузили что-то не то"
   form:
     password: "Пароль"
     change_password: "Изменить пароль"
