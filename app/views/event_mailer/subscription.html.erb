@@ -1,14 +1,11 @@
 <h1><%= t '.title' %></h1>
 <p><%= t '.name' %>: <strong><%= @name %></strong></p>
 <p><%= t '.email' %>: <strong><%= link_to @email, "mailto:#{@email}" %></strong></p>
+
 <hr/>
 
-<%= t '.event' %>
+<p><%= t '.event' %>: <strong><%= link_to @event.title, event_url(@event) %></strong></p>
 
-<h3><%= @event.title %></h3>
+<p><%= t '.datetime' %>: <strong><%= l @event.datetime, format: :long %></strong></p>
 
-<%= t '.author' %>
-<h4><%= l @event.datetime, format: :long %></h4>
-
-<%= t '.owner' %>
-<h4><%= @event.user.username %></h4>
+<p><%= t '.owner' %>: <strong><%= @event.user.username %></strong></p>
