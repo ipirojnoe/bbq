@@ -131,27 +131,30 @@ ru:
     button: "Я пойду"
   event_mailer:
     comment:
-      title: 'Новый комментарий'
-      author: 'Автор'
-      event: 'Событие'
-      datetime: 'Состоится'
-      owner: 'Организатор'
+      subject: "Новый комментарий @ %{title}"
+      title: "Новый комментарий"
+      author: "Автор"
+      event: "Событие"
+      datetime: "Состоится"
+      owner: "Организатор"
     subscription:
-      title: 'Новая подписка'
-      name: 'Имя'
-      email: 'Email'
-      author: 'Автор'
-      event: 'Событие'
-      datetime: 'Состоится'
-      owner: 'Организатор'
+      subject: 'Новая подписка на "%{title}"'
+      title: "Новая подписка"
+      name: "Имя"
+      email: "Email"
+      author: "Автор"
+      event: "Событие"
+      datetime: "Состоится"
+      owner: "Организатор"
     photo:
+      subject: 'Новая фотография у события "%{title}"'
       title: "Новое фото"
-      name: 'Имя'
-      email: 'Email'
-      author: 'Автор фото'
-      event: 'Событие'
-      datetime: 'Состоится'
-      owner: 'Организатор'
+      name: "Имя"
+      email: "Email"
+      author: "Автор фото"
+      event: "Событие"
+      datetime: "Состоится"
+      owner: "Организатор"
   partials:
    error:
     one: "В вашей форме %{count} ошибка"
