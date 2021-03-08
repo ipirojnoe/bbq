@@ -1,12 +1,5 @@
   <% title = "#{t('controllers.photos.added')} #{render partial: 'users/user', object: photo.user} #{delete_photo?(@event, photo)}" %>
-  <% if photo.photo.url.present? %>
-      <%= link_to image_tag(photo.photo.thumb.url, class: "m-1"), photo.photo.url,
-        data: { title: title, toggle: "lightbox", gallery: "event-photos" } %>
-  <% else %>
-    <%= link_to image_tag(asset_pack_path('media/images/barbeque.jpg'), size: "100", class: "m-1"), 
-        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        data: { title: "#{t('controllers.photos.added')} #{render partial: 'users/user', object: photo.user}",
-        toggle: "lightbox", gallery: "event-photos" } %>
-  <% end %>
+  <%= link_to image_tag(photo.photo.thumb.url, class: "m-1"), photo.photo.url,
+    data: { title: title, toggle: "lightbox", gallery: "event-photos" } %>
   
 

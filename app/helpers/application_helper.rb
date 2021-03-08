@@ -21,22 +21,20 @@ module ApplicationHelper
     photos = event.photos.persisted
 
     if photos.any?
-      random_photo = photos.sample.photo.url
-      return random_photo if random_photo.present?
+      photos.sample.photo.url
+    else
+      asset_pack_path('media/images/event.jpg')
     end
-
-    asset_pack_path('media/images/event.jpg')
   end
 
   def event_thumb(event)
     photos = event.photos.persisted
 
     if photos.any?
-      random_photo = photos.sample.photo.thumb.url
-      return random_photo if random_photo.present?
+      photos.sample.photo.url
+    else
+      asset_pack_path('media/images/event_thumb.jpg')
     end
-
-    asset_pack_path('media/images/event_thumb.jpg')
   end
 
   def flash_class(name)
