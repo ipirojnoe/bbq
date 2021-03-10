@@ -27,6 +27,7 @@ end
 
 group :development do
   gem "letter_opener_web"
+  gem "annotate"
   gem 'pry'
   gem 'listen', '~> 3.2'
 end

@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: subscriptions
+#
+#  id         :integer          not null, primary key
+#  user_name  :string
+#  user_email :string
+#  event_id   :integer          not null
+#  user_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Subscription < ApplicationRecord
   EMAIL_REGEX = /\A[a-z\d_+.\-]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
