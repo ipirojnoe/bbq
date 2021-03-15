@@ -52,7 +52,7 @@ module ApplicationHelper
   
   def delete_photo?(event, photo)
     if event.user == current_user || photo.user == current_user
-      link_to fa_icon("fas fa-trash"), event_photo_path(event, photo), method: :delete
+      link_to fa_icon("fas fa-trash"), event_photo_path(event, photo), method: :delete, data: { confirm: I18n.t('form.delete.confirm') }
     end
   end
 end
