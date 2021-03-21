@@ -14,6 +14,7 @@ gem 'carrierwave', '~> 2.0'
 gem 'rmagick'
 gem 'fog-aws'
 gem 'mailjet'
+gem 'dotenv-rails'
 
 group :production do
   gem 'pg'
@@ -22,7 +23,6 @@ end
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'dotenv-rails'
 end
 
 group :development do
