@@ -26,8 +26,14 @@ group :development, :test do
 end
 
 group :development do
-  gem "letter_opener_web"
-  gem "annotate"
+  gem 'letter_opener_web'
+  gem 'annotate'
   gem 'pry'
   gem 'listen', '~> 3.2'
+
+  gem 'capistrano', '~> 3.10'
+  gem 'capistrano-bundler', '~> 2.0'
+  gem 'capistrano-passenger', '~> 0.2'
+  gem 'capistrano-rails', '~> 1.6'
+  gem 'capistrano-rbenv', '~> 2.1'
 end
