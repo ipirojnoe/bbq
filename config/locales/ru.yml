@@ -1,4 +1,6 @@
 ru:
+  pundit:
+    not_authorized: "Вам сюда нельзя!"
   errors:
     messages:
       extension_whitelist_error: "Вы загрузили что-то не то"

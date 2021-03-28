@@ -7,6 +7,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'puma', '~> 4.1'
 gem 'webpacker', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'pundit', '2.1.0'
 gem 'devise'
 gem 'rails-i18n'
 gem 'devise-i18n'
@@ -23,6 +24,9 @@ end
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'rspec-rails', '~> 3.4'
+  gem 'factory_bot_rails'
 end
 
 group :development do
