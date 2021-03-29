@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user_can_edit?
 
+  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(
       :account_update,
@@ -22,8 +24,6 @@ class ApplicationController < ActionController::Base
   def pundit_user
     UserContext.new(current_user, cookies)
   end
-
-  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   private
 
