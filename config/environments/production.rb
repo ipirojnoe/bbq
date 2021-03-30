@@ -110,8 +110,10 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  
   config.action_mailer.default_url_options = { :host => ENV['HOST'] }
 
   config.action_mailer.delivery_method = :mailjet
+
+  config.active_job.queue_adapter = :async
+  config.active_job.queue_name_prefix = "bbq_#{Rails.env}"
 end
