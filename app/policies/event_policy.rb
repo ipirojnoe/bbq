@@ -17,6 +17,10 @@ class EventPolicy < ApplicationPolicy
       record.pincode_valid?(cookies["events_#{record.id}_pincode"])
   end
 
+  def create?
+    user.present?
+  end
+
   class Scope < Scope
     def resolve
       scope.all
