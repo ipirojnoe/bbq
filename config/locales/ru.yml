@@ -101,6 +101,9 @@ ru:
       events_made: "Организовал"
       no_events: "Пользователь пока не организовал ни одного
           событи"
+      events_subscribed_to: "Пойдёт"
+      no_events_subscribed_to: "Пользователь пока не пошёл ни на одно
+          событие"
   events:
     events: "События"
     form:

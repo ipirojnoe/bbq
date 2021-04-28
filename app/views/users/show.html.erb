@@ -19,5 +19,15 @@
         <p class="buffer-top"><%= t('users.show.no_events') %></p>
       <% end %>
     </div>
+    <div class="col-md-12">
+      <% if @user.subscriptions.any? %>
+        <h3><%= t('users.show.events_subscribed_to') %>:</h3>
+        <div class="row">
+          <%= render partial: 'events/event', collection: @user.subscriptions.map(&:event) %>
+        </div>
+      <% else %>
+        <p class="buffer-top"><%= t('users.show.no_events_subscribed_to') %></p>
+      <% end %>
+    </div>
   </div>
 </div>
