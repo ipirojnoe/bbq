@@ -59,6 +59,6 @@ class User < ApplicationRecord
 
   def link_subscriptions
     Subscription.where(user_id: nil, user_email: self.email)
-      .update_all(user_id: self.id)
-  end 
+                .update_all(user_id: self.id)
+  end
 end

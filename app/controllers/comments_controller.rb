@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_event, only: [:create, :destroy]
+  before_action :set_event, only: %i[create destroy]
   before_action :set_comment, only: [:destroy]
 
   def create
@@ -15,12 +15,12 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    message = {success: I18n.t('controllers.comments.destroyed')}
+    message = { success: I18n.t('controllers.comments.destroyed') }
 
     if current_user_can_edit?(@comment)
       @comment.destroy!
     else
-      message = {danger: I18n.t('controllers.comments.error')}
+      message = { danger: I18n.t('controllers.comments.error') }
     end
 
     redirect_to @event, message

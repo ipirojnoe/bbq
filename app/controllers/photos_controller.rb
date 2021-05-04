@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-  before_action :set_event, only: [:create, :destroy]
+  before_action :set_event, only: %i[create destroy]
   before_action :set_photo, only: [:destroy]
 
   def create
@@ -15,12 +15,12 @@ class PhotosController < ApplicationController
   end
 
   def destroy
-    message = {success: I18n.t('controllers.photos.destroyed')}
+    message = { success: I18n.t('controllers.photos.destroyed') }
 
     if current_user_can_edit?(@photo)
       @photo.destroy
     else
-      message = {danger: I18n.t('controllers.photos.error')}
+      message = { danger: I18n.t('controllers.photos.error') }
     end
 
     redirect_to @event, message

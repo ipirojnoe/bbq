@@ -24,7 +24,7 @@ class Subscription < ApplicationRecord
 
   validate :check_email_for_existence, unless: -> { user.present? }
   validate :check_whos_subscription, if: -> { user.present? }
-  
+
   def user_name
     if user.present?
       user.username

@@ -25,8 +25,9 @@ class SubscriptionsController < ApplicationController
 
     redirect_to @event, message
   end
-  
-private
+
+  private
+
   def set_subscription
     @subscription = @event.subscriptions.find(params[:id])
   end
