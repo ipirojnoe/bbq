@@ -48,7 +48,7 @@ cd bbq
 
 ```bash
 gem install bundler:2.2.13
-bundle install
+bundle install --without production
 ```
 
 **3**.Установка NodeJS, Yarn и Webpacker
