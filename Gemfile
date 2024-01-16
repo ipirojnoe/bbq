@@ -38,7 +38,7 @@ group :development do
   gem 'annotate'
   gem 'capistrano', '~> 3.10'
   gem 'capistrano-bundler', '~> 2.0'
-  gem 'capistrano-passenger', '~> 0.2'
+  gem 'capistrano-passenger', '~> 0.2.1'
   gem 'capistrano-rails', '~> 1.6'
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'letter_opener_web'
