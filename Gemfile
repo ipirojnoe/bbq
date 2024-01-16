@@ -19,7 +19,7 @@ gem 'pundit', '2.1.0'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'rails-i18n'
 gem 'resque'
-gem 'rmagick'
+gem 'rmagick', '~> 5.3.0'
 gem 'webpacker', '~> 4.0'
 
 group :production do
