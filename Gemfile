@@ -8,7 +8,6 @@ gem 'carrierwave', '~> 2.0'
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 gem 'devise-i18n'
 gem 'dotenv-rails'
-gem 'fog-aws'
 gem 'mailjet'
 
 gem 'omniauth'
