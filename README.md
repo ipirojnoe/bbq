@@ -31,7 +31,6 @@
 - [Omniauth](https://github.com/omniauth/omniauth) и [Omniauth-github](https://github.com/omniauth/omniauth-github) - Аутентификация через GitHub
 - [Pundit](https://github.com/varvet/pundit) - Простая и понятная авторизация доступа
 - [CarrierWave](https://github.com/carrierwaveuploader/carrierwave) и [RMagick](https://github.com/rmagick/rmagick) - Для правильной загрузки и обработки фотографий
-- [fog-aws](https://github.com/fog/fog-aws) - Загрузка фотографий на сервис Amazon S3
 - [MailJet](https://github.com/mailjet/mailjet-gem) - Отправка уведомлений пользователям по Email
 - [Resque](https://github.com/resque/resque) - Фоновая отправка писем пользователям
 
