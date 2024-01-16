@@ -35,6 +35,10 @@
 - [MailJet](https://github.com/mailjet/mailjet-gem) - Отправка уведомлений пользователям по Email
 - [Resque](https://github.com/resque/resque) - Фоновая отправка писем пользователям
 
+```
+node v14.21.3
+```
+
 
 ## Установка и запуск
 
