@@ -21,6 +21,7 @@ gem 'rails-i18n'
 gem 'resque'
 gem 'rmagick', '~> 5.3.0'
 gem 'webpacker', '~> 4.0'
+gem 'rake'
 
 group :production do
   gem 'pg'
