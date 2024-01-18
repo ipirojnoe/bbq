@@ -1,6 +1,6 @@
 # Барбекю
 
-![Барбекю](https://raw.githubusercontent.com/sirdemin/bbq/main/public/favicon.png)
+![Барбекю](https://raw.githubusercontent.com/ipirojnoe/bbq/main/public/favicon.png)
 
 Барбекю - сервис, где можно позвать друзей без лишних вопросов, долгой координации и man-in-the-middle
 
@@ -19,7 +19,7 @@
 - Смотреть какие события создал пользователь и на какие пошёл
 
 Событие можно открыть и закрыть в любой момент, поменять пин-код, а также удалить.
-Посмотреть как всё работает [можно по этой ссылке](https://bbq.demin.io/)
+Посмотреть как всё работает [можно по этой ссылке](https://bbq.ipirojnoe.ru/)
 
 ## Зависимости
 
@@ -43,7 +43,7 @@ node v14.21.3
 
 **1**.Клонирование репозитория 
 ```bash
-git clone git@github.com:sirdemin/bbq.git
+git clone git@github.com:ipirojnoe/bbq.git
 cd bbq
 ```
 
